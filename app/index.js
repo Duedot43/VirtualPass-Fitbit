@@ -1,5 +1,5 @@
 import * as messaging from "messaging";
-import * as document from "document";
+import { getElementById } from "document";
 import { existsSync } from "fs";
 import { writeFileSync } from "fs";
 import { readFileSync } from "fs";
@@ -9,6 +9,11 @@ if (!existsSync("/private/data/info.json")){
     writeFile("/private/data/info.json", '{"hostname":"", "key":""}');
     console.log("File write");
 }
+
+
+let activ = getElementById("activ");
+
+
 //let myElement = document.getElementById("myElement");
 //Trigger the event if the settings are changed
 messaging.peerSocket.addEventListener("message", (evt) => {
