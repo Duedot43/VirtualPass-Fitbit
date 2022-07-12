@@ -1,0 +1,6 @@
+<svg>
+  <rect id='background' />
+  <use href="#text-button">
+    <set href="#text" attributeName="text-buffer" to="BUTTON" />
+  </use>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "name": "virtualpass-fitbit",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~4.2.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "03eda4a6-e2dd-4464-b11c-c402628bcf1b",
+    "appType": "app",
+    "appDisplayName": "VirtualPass",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#2280a5",
+    "requestedPermissions": ["access_internet"],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}
