@@ -10,8 +10,12 @@ if (!existsSync("/private/data/info.json")){
     console.log("File write");
 }
 
-
 let activ = getElementById("activ");
+
+let button = getElementById("button");
+button.onactivate = function(evt) {
+  button.text = "Clicked";
+}
 
 
 //let myElement = document.getElementById("myElement");
