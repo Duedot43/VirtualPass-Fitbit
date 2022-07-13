@@ -4,7 +4,7 @@
     id='activ'>Unknown</text>
 
   <use id="button" href="#push-button" y="65" height="80" fill="#70b8d4" font-family="System-Regular" font-size="50">
-    <set href="#text" attributeName="text-buffer" to="Click Me!" />
+    <set href="#text" attributeName="text-buffer" to="Unknown" />
     <set href="#text" attributeName="fill" to="fb-white" />
     <set href="#text" attributeName="y" to="20" />
   </use>
